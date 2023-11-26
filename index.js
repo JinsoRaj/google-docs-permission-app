@@ -19,8 +19,6 @@ const authUrl = oAuth2Client.generateAuthUrl({
   scope: ['https://www.googleapis.com/auth/drive'] // Adjust scopes as needed
 });
 
-// Your API key
-const API_KEY = 'your_api_key_here';
 
 // Middleware to check API key in incoming requests
 const checkApiKey = (req, res, next) => {
